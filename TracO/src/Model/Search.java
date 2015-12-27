@@ -5,16 +5,14 @@ import java.util.Date;
 public class Search {
 	
 	private String searchId;
-	private String typeOfTransport;//train/airplane
+	private String typeOfTransport; // Train or Airplane
 	private Date departDate;
 	private Date returnDate;
 	private Location src;
 	private Location dest;
 	private TypeOfPerson Person;
 	private TypeOfClass classType;
-	private String typeOfFlight;//oneway/roundtrip
-	
-	
+	private String typeOfFlight; // Oneway or Roundtrip
 	
 	public Search() {}
 	

@@ -1,11 +1,10 @@
 package Model;
 
-public class TypeOfClass {//enum
+public class TypeOfClass {//enum?
 	
-	private String typeOfClass;//firstclass/economy
+	private String typeOfClass; // Firstclass or Economy
 
 	public TypeOfClass(String typeOfClass) {
-
 		this.typeOfClass = typeOfClass;
 	}
 
@@ -16,7 +15,4 @@ public class TypeOfClass {//enum
 	public void setTypeOfClass(String typeOfClass) {
 		this.typeOfClass = typeOfClass;
 	}
-	
-	
-
 }

@@ -2,7 +2,7 @@ package Model;
 
 public class TypeOfPerson {
 	
-	private String typeOfPerson;//student/baby
+	private String typeOfPerson; // Student,Baby..
 	private int age;
 	private int numOfPersons;
 	
@@ -35,8 +35,5 @@ public class TypeOfPerson {
 	
 	public void setNumOfPersons(int numOfPersons) {
 		this.numOfPersons = numOfPersons;
-	}
-	
-	
-
+	}	
 }

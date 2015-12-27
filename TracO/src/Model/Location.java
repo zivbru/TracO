@@ -2,43 +2,48 @@ package Model;
 
 public class Location {
 	
-	private String country;
-	private String city;
-	private String station;//airport//trainstaion
+	private String Country;
+	private String City;
+	private String Station; //Airport,Train staion
+	private String Name; //BGU,LGU..
 	
-	public Location(String country, String city, String station) {
+	public Location(String Country, String City, String Station, String Name) {
 		super();
-		this.country = country;
-		this.city = city;
-		this.station = station;
+		this.Country = Country;
+		this.City = City;
+		this.Station = Station;
+		this.Name = Name;
 	}
 	
 	public String getCountry() {
-		return country;
+		return Country;
 	}
 	
 	public void setCountry(String country) {
-		this.country = country;
+		this.Country = country;
 	}
 	
 	public String getCity() {
-		return city;
+		return City;
 	}
 	
 	public void setCity(String city) {
-		this.city = city;
+		this.City = city;
 	}
 	
 	public String getStation() {
-		return station;
+		return Station;
 	}
 	
 	public void setStation(String station) {
-		this.station = station;
+		this.Station = station;
 	}
-	
-	
-	
-	
 
+	public String getName() {
+		return Name;
+	}
+
+	public void setName(String name) {
+		Name = name;
+	}
 }

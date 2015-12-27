@@ -5,9 +5,9 @@ import java.util.Date;
 
 public class Ticket {
 	
-	private String type;//train/airplane(enum)
+	private String type; // Train or Airplane (enum)
 	private String ticketId;
-	private String tripId;//foreign key
+	private String tripId; //foreign key
 	private Date depart;
 	private Date arrival;
 	private SimpleDateFormat hourDepart;
@@ -15,15 +15,22 @@ public class Ticket {
 	private Location src;
 	private Location dest;
 	private float price;
-	
-	
-	
+	private String company;
+		
+	public String getCompany() {
+		return company;
+	}
+
+	public void setCompany(String company) {
+		this.company = company;
+	}
+
 	public Ticket() {}
 	
 	public Ticket(String type, String ticketId, String tripId, Date depart,
 			Date arrival, SimpleDateFormat hourDepart,
 			SimpleDateFormat hourArrival, Location src, Location dest,
-			float price) {
+			float price,String company, String TypeOfTravel) {
 		super();
 		this.type = type;
 		this.ticketId = ticketId;
@@ -35,9 +42,8 @@ public class Ticket {
 		this.src = src;
 		this.dest = dest;
 		this.price = price;
+		this.company=company;
 	}
-
-
 
 	public String getType() {
 		return type;
@@ -99,9 +105,4 @@ public class Ticket {
 	public void setPrice(float price) {
 		this.price = price;
 	}
-	
-	
-	
-	
-
 }

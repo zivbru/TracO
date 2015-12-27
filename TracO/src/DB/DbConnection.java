@@ -39,8 +39,6 @@ public class DbConnection {
 					+ ".Search(SearchId))";
 			statement.executeUpdate(RESULT_TABLE);
 
-
-
 			final String TRIP_TABLE=" create table Trip("
 					+ "TripId varchar(32) NOT NULL,"
 					+ "TicketId varchar(32) NOT NULL,"

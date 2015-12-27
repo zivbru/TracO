@@ -5,38 +5,40 @@ import java.util.List;
 
 public class Trip {
 	
-	private List <Ticket> tickets = new ArrayList<Ticket>();
-	
-	private float totalPrice;
-	
-	private String resultid;//foreign key
-
-	
+	private String TripId;
+	private List <Ticket> Tickets = new ArrayList<Ticket>();
+	private float TotalPrice;
+	private String Resultid;//foreign key
 	
 	public List<Ticket> getTickets() {
-		return tickets;
+		return Tickets;
 	}
 
 	public void setTickets(List<Ticket> tickets) {
-		this.tickets = tickets;
+		this.Tickets = tickets;
 	}
 
 	public float getTotalPrice() {
-		return totalPrice;
+		return TotalPrice;
 	}
 
 	public void setTotalPrice(float totalPrice) {
-		this.totalPrice = totalPrice;
+		this.TotalPrice = totalPrice;
 	}
 
 	public String getResultid() {
-		return resultid;
+		return Resultid;
 	}
 
 	public void setResultid(String resultid) {
-		this.resultid = resultid;
+		this.Resultid = resultid;
 	}
 
-	
-	
+	public String getTripId() {
+		return TripId;
+	}
+
+	public void setTripId(String tripId) {
+		TripId = tripId;
+	}
 }

@@ -7,12 +7,9 @@ public class Result {
 	
 	private List<Trip> trips =new ArrayList<Trip>();
 	private int resultId;
-	private String searchId;//foreign key
-	
-	
+	private String searchId; //foreign key
 	
 	public Result(List<Trip> trips, int resultId, String searchId) {
-	
 		this.trips = trips;
 		this.resultId = resultId;
 		this.searchId = searchId;
@@ -41,7 +38,4 @@ public class Result {
 	public void setSearchId(String searchId) {
 		this.searchId = searchId;
 	}
-	
-	
-
 }
